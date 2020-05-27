@@ -1,1 +1,72 @@
 /* You can add global styles to this file, and also import other style files */
+/* Eventually download the actual files */
+@import 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap';
+@import 'assets/css/variables.scss';
+
+$aos-distance: 20px;
+@import 'assets/aos/aos.scss';
+@import 'assets/slick/slick.scss';
+@import 'assets/slick/slick-theme.scss';
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 200;
+    background: $offwhite;
+    overflow-x: hidden;
+}
+
+a[href] {
+    color: $primary;
+    text-decoration: underline;
+
+    &:hover, &:active, &:focus {
+        text-decoration: none;
+    }
+}
+
+h1 {
+    font-size: 120px;
+    font-weight: 900;
+}
+
+.divider {
+    display: block;
+    height: 4px;
+    width: 120px;
+    background-color: $primary;
+    margin: 32px 0;
+
+    &-white {
+        background-color: $offwhite;
+    }
+}
+
+#section0 {
+    padding-bottom: 4rem;
+
+    .background, .overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 33vh;
+        left: 0;
+    }
+
+    .background {
+        background: $secondary;
+    }
+
+    p, span {
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: 30px;
+    }
+
+    .header {
+        padding-top: 127px;
+
+        h1 {
+            color: $offwhite;
+        }
+    }
+}

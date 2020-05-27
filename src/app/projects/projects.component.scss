@@ -1,0 +1,31 @@
+@import '../../assets/css/variables.scss';
+
+#section0 {
+    .card {
+        border: none;
+        background: $lightprimary;
+        box-shadow: 0 0 64px rgba(0,0,0,0.05);
+        border-radius: 32px;
+        font-size: 16px;
+        line-height: 24px;
+
+        > * {
+            border-radius: inherit;
+        }
+
+        &-title {
+            font-weight: 400;
+        }
+
+        p.card-text {
+            font-size: 16px;
+            line-height: 32px;
+        }
+
+        img {
+            float: left;
+            width: 40px;
+            margin-right: 1em;
+        }
+    }
+}

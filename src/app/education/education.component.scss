@@ -1,0 +1,28 @@
+@import '../../assets/css/variables.scss';
+
+#section0 {
+    .overlay {
+        background: url('../../assets/img/Geisel.JPG');
+        background-size: cover;
+        background-position: center center;
+        opacity: 0.5;
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+
+        span {
+            display: inline-block;
+            font-weight: 400;
+        }
+
+        .name, .desc {
+            float: left;
+        }
+
+        .date {
+            float: right;
+        }
+    }
+}
