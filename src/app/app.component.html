@@ -1,15 +1,51 @@
-<div class="container">
+<div class="container d-none d-xl-block">
     <div class="row">
-        <div class="col-xl-2 fixed-top text-right desktop-nav d-none d-xl-block pr-5">
+        <div class="col-xl-2 fixed-top text-right desktop-nav pr-5">
             <svg xmlns="http://www.w3.org/2000/svg" width="300" height="1080" viewBox="0 0 300 1080"><defs><style>.a{fill:#a63a50;}</style></defs><path class="a" d="M1920,1080H1658L1520,0h400Z" transform="translate(-1520)"/></svg>
             <h1 class="text-right">Marcus Franco</h1>
             <ul class="mt-5">
-                <li><a href="#" routerLink="/">About</a></li>
+                <li><a class="active" href="#" routerLink="/">About</a></li>
                 <li><a href="#" routerLink="/education">Education</a></li>
                 <li><a href="#" routerLink="/skills">Skills</a></li>
                 <li><a href="#" routerLink="/projects">Projects</a></li>
                 <li><a href="#" routerLink="/contact">Contact</a></li>
             </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid d-xl-none fixed-top">
+    <div class="row">
+        <div class="col">
+            <nav class="navbar navbar-expand-xl navbar-dark my-3">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navcon"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="hamburger bun"></span>
+                    <span class="hamburger patty"></span>
+                    <span class="hamburger bum"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navcon">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#" routerLink="/">About <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" routerLink="/education">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" routerLink="/skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" routerLink="/projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" routerLink="/contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </div>
 </div>

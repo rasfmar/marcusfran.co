@@ -13,16 +13,29 @@
         padding-left: 0;
 
         span {
-            display: inline-block;
+            display: block;
+            @media (min-width: 768px) {
+                display: inline-block;
+            }
+        }
+
+        .name {
             font-weight: 400;
         }
 
         .name, .desc {
-            float: left;
+            @media (min-width: 768px) {
+                float: left;
+            }
         }
 
         .date {
-            float: right;
+            display: none;
+            @media (min-width: 768px) {
+                display: block;
+                font-weight: 400;
+                float: right;
+            }
         }
     }
 }

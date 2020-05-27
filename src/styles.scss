@@ -15,20 +15,6 @@ body {
     overflow-x: hidden;
 }
 
-a[href] {
-    color: $primary;
-    text-decoration: underline;
-
-    &:hover, &:active, &:focus {
-        text-decoration: none;
-    }
-}
-
-h1 {
-    font-size: 120px;
-    font-weight: 900;
-}
-
 .divider {
     display: block;
     height: 4px;
@@ -41,6 +27,62 @@ h1 {
     }
 }
 
+nav {
+    text-align: right;
+
+    #navcon {
+        ul {
+            padding: 1em 0;
+
+            li a {
+                max-width: 10em;
+                padding: 0 1em;
+                margin-left: auto;
+                background: $secondary;
+
+                font-size: 20px;
+                letter-spacing: 0;
+                line-height: 30px;
+
+                transition: all .3s cubic-bezier(0,1,1,1);
+            }
+            
+            li:first-child a {
+                padding: 0.9em 0.9em 0;
+            }
+
+            li:last-child a {
+                padding: 0 0.9em 0.9em;
+            }
+        }
+    }
+
+    .navbar-toggler {
+        border: none;
+        border-radius: 0;
+        background: $secondary;
+
+        .hamburger {
+            display: block;
+            width: 32px;
+            height: 2px;
+            background-color: $offwhite;
+            transition: all 0.3s cubic-bezier(0,1,1,1);
+            margin: 8px 0;
+        }
+
+        &.collapsed {
+            .bun { width: 16px; margin-left: auto; }
+            .bum { width: 16px; margin-right: auto;}
+        }
+
+        &:not(.collapsed) {
+            .bun { width: 32px; margin-left: auto; }
+            .bum { width: 32px; margin-right: auto;}
+        }
+    }
+}
+
 #section0 {
     padding-bottom: 4rem;
 
@@ -48,8 +90,12 @@ h1 {
         position: absolute;
         top: 0;
         right: 0;
-        height: 33vh;
         left: 0;
+        height: 25vh;
+
+        @media (min-width: 768px) {
+            height: 33vh;
+        }
     }
 
     .background {
@@ -60,6 +106,24 @@ h1 {
         font-size: 20px;
         letter-spacing: 0;
         line-height: 30px;
+    }
+
+    h1 {
+        font-weight: 900;
+        font-size: 50px;
+
+        @media (min-width: 768px) {
+            font-size: 120px;
+        }
+    }
+
+    a[href] {
+        color: $primary;
+        text-decoration: underline;
+
+        &:hover, &:active, &:focus {
+            text-decoration: none;
+        }
     }
 
     .header {
