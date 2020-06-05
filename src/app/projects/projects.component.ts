@@ -26,7 +26,7 @@ export class ProjectsComponent implements OnInit {
         icon: '/assets/img/Angular.png',
         desc: 'AngularSandbox is a web application developed in Angular to practice its full capabilities. You’ll find several different components with random functions.',
         links: [
-          ['Link (HTTP)','http://35.155.41.181:1026/'],
+          ['Link','https://honorable.pw'],
           ['GitHub (WIP)','https://github.com/rasfmar/AngularSandbox']
         ]
       },
