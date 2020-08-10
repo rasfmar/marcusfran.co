@@ -1,47 +1,31 @@
 {
-  "name": "marcusfranco",
-  "version": "0.0.0",
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
-  },
+  "name": "gatsby-starter-hello-world",
   "private": true,
+  "description": "A simplified bare-bones starter for Gatsby",
+  "version": "0.1.0",
+  "license": "0BSD",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
   "dependencies": {
-    "@angular/animations": "~9.1.9",
-    "@angular/common": "~9.1.9",
-    "@angular/compiler": "~9.1.9",
-    "@angular/core": "~9.1.9",
-    "@angular/forms": "~9.1.9",
-    "@angular/platform-browser": "~9.1.9",
-    "@angular/platform-browser-dynamic": "~9.1.9",
-    "@angular/router": "~9.1.9",
-    "@types/jquery": "^3.3.38",
-    "rxjs": "~6.5.4",
-    "tslib": "^1.10.0",
-    "zone.js": "~0.10.2"
+    "gatsby": "^2.24.26",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.901.7",
-    "@angular/cli": "~9.1.7",
-    "@angular/compiler-cli": "~9.1.9",
-    "@types/node": "^12.11.1",
-    "@types/jasmine": "~3.5.0",
-    "@types/jasminewd2": "~2.0.3",
-    "codelyzer": "^5.1.2",
-    "jasmine-core": "~3.5.0",
-    "jasmine-spec-reporter": "~4.2.1",
-    "karma": "~5.0.0",
-    "karma-chrome-launcher": "~3.1.0",
-    "karma-coverage-istanbul-reporter": "~2.1.0",
-    "karma-jasmine": "~3.0.1",
-    "karma-jasmine-html-reporter": "^1.4.2",
-    "protractor": "~7.0.0",
-    "ts-node": "~8.3.0",
-    "tslint": "~6.1.0",
-    "typescript": "~3.8.3"
+    "prettier": "2.0.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }
