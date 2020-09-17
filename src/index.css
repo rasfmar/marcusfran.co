@@ -35,6 +35,7 @@ body {
 .text {
   transform: translate3d(2rem,-3rem,2rem) rotateY(15deg);
   transform-origin: left;
+  z-index: 9999;
 }
 
 h1 {
@@ -136,9 +137,7 @@ img::selection {
 .threecon {
   position: absolute;
   top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  left: 50%;
 }
 
 .static {
