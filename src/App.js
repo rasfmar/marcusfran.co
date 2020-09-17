@@ -4,12 +4,11 @@ import ThreeD from "./ThreeD";
 import {useSpring, animated} from "react-spring"
 
 function App() {
-  const springLeft = useSpring({marginLeft: "0", from: {marginLeft: "-1600px"}});
-  const springRight = useSpring({marginRight: "0", from: {marginRight: "-1600px"}});
+  const springDown = useSpring({marginTop: "0", from: {marginTop: "-1600px"}});
 
   return (
     <>
-      <animated.div className="text" style={springLeft}>
+      <animated.div className="text" style={springDown}>
         <h1>marcus franco</h1>
         <p>computer engineering @ purdue university</p>
         <p>better website coming soon</p>
@@ -22,7 +21,7 @@ function App() {
           { url: "https://marcusfran.co/assets/MarcusFrancoResume.pdf", name: "résumé" }]}
         />
       </animated.div>
-      <animated.div className="threecon" style={springRight}>
+      <animated.div className="threecon" style={springDown}>
         <ThreeD />
       </animated.div>
       <div className="static" />
