@@ -11,7 +11,6 @@ function App() {
       <animated.div className="text" style={springDown}>
         <h1>marcus franco</h1>
         <p>computer engineering @ purdue university</p>
-        <p>better website coming soon</p>
         <a href="mailto:m6franco@ucsd.edu">m6franco@ucsd.edu</a>
         <Nav items={[
           { url: "https://blog.marcusfran.co", name: "blog" },
