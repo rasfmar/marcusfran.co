@@ -32,7 +32,7 @@ export default function Home() {
     },
     {
       name: "GitHub",
-      url: "https://github.com/in/rasfmar"
+      url: "https://github.com/rasfmar"
     },
     {
       name: "Bookshelf",
