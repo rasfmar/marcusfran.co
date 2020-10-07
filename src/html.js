@@ -11,6 +11,9 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <meta name="keywords" content="marcus,franco,web,design,develop,development,software,engineering" />
+        <meta name="description" content="Hi. I'm 18-year-old software engineer interested in humanitarianism." />
+        <title>Marcus Franco</title>
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
