@@ -1,10 +1,25 @@
 import React from "react"
-import styles from "./styles";
+import { makeStyles } from "@material-ui/styles";
 import Profile from "../../components/Profile";
 import image from "../../assets/grad.png";
 
 export default function Home() {
-  const classes = styles();
+  const classes = makeStyles({
+    container: {
+      display: "inline-block",
+      textAlign: "center",
+      padding: "0 0.5em",
+      "@media (min-width: 789px)": {
+        textAlign: "left",
+        padding: "0"
+      }
+    },
+    social: {
+      display: "block",
+      marginTop: "1.25em"
+    }
+  })();
+
   const socialMedia = [
     {
       name: "Email",
