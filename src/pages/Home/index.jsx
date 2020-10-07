@@ -1,5 +1,6 @@
 import React from "react"
 import { makeStyles } from "@material-ui/styles";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
 import Profile from "../../components/Profile";
 import image from "../../assets/grad.png";
 
@@ -65,12 +66,12 @@ export default function Home() {
         >Hi. I'm 18-year-old software engineer interested in humanitarianism.</p>
         {socialMedia.map((s, i) => (
           <>
-            <a
+            <OutboundLink
               href={s.url}
               data-sal="slide-up"
               data-sal-delay="100"
               data-sal-duration="800"
-            >{s.name}</a>
+            >{s.name}</OutboundLink>
             {i === socialMedia.length - 1 || (
               <span
                 data-sal="slide-up"
