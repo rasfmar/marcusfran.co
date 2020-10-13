@@ -7,19 +7,16 @@ const styles = makeStyles({
     marginRight: "1em",
     width: "175px",
     height: "175px",
-    border: "8px solid #f7f7f7",
+    backgroundColor: "#fff",
+    border: "8px solid #fff",
     borderRadius: "50%",
     boxShadow: "0 8px 16px rgba(0,0,0,0.05)",
     overflow: "hidden",
     transition: "all 0.3s ease",
     "& img": {
       width: "100%",
-      filter: "grayscale(80%)",
       transition: "all 1s ease"
     },
-    "&:hover img": {
-      filter: "grayscale(20%)"
-    }
   },
   text: {
     display: "inline-block"

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
 body {
-  background: #eee;
+  background: #f7f7f7;
   text-align: center;
   margin: auto;
   font-family: 'Lato', 'Verdana', sans-serif;
@@ -10,8 +10,9 @@ body {
   color: #000;
   line-height: 1.5;
 
-  @media (min-width: 789px) {
+  @media (min-width: 816px) {
     line-height: 0.9;
+    text-align: left;
   }
 }
 
@@ -31,7 +32,7 @@ a[href]:not(.social-media-btn) {
     display: block;
     position: absolute;
     left: 0;
-    bottom: -4px;
+    bottom: 2px;
     height: 1px;
     width: 100%;
     background: #000;
@@ -44,6 +45,12 @@ a[href]:not(.social-media-btn) {
 
     &::after {
       width: 8px;
+    }
+  }
+
+  @media (min-width: 816px) {
+    &::after {
+      bottom: -4px;
     }
   }
 }

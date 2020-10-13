@@ -1,16 +1,22 @@
-import React from "react"
+import React, { useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/styles";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 import Profile from "../../components/Profile";
-import image from "../../assets/grad.png";
+import image from "../../assets/me.png";
 
 export default function Home() {
+  const [ width, setWidth ] = useState(
+    typeof window !== "undefined"
+      ? window.innerWidth
+      : 0
+  );
+
   const classes = makeStyles({
     container: {
       display: "inline-block",
       textAlign: "center",
       padding: "0 0.5em",
-      "@media (min-width: 789px)": {
+      "@media (min-width: 816px)": {
         textAlign: "left",
         padding: "0"
       }
@@ -39,6 +45,17 @@ export default function Home() {
       url: "https://bookshelf.website/rasfmar"
     }
   ];
+
+  useEffect(() => {
+    if (typeof window === "undefined")
+      return;
+
+    const handleResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize)
+    };
+  });
   
   return (
     <div className={classes.container}>
@@ -63,7 +80,7 @@ export default function Home() {
           data-sal="slide-up"
           data-sal-delay="100"
           data-sal-duration="800"
-        >Hi. I'm 18-year-old software engineer interested in humanitarianism.</p>
+        >Hi! I'm an 18-year-old software engineer interested in humanitarianism.</p>
         {socialMedia.map((s, i) => (
           <>
             <OutboundLink
@@ -73,11 +90,15 @@ export default function Home() {
               data-sal-duration="800"
             >{s.name}</OutboundLink>
             {i === socialMedia.length - 1 || (
-              <span
-                data-sal="slide-up"
-                data-sal-delay="100"
-                data-sal-duration="800"
-              > — </span>
+              width >= 576 ? (
+                <span
+                  data-sal="slide-up"
+                  data-sal-delay="100"
+                  data-sal-duration="800"
+                > — </span>
+              ) : (
+                <br />
+              )
             )}
           </>
         ))}
