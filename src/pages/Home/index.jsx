@@ -30,7 +30,7 @@ export default function Home() {
   const socialMedia = [
     {
       name: "Email",
-      url: "mailto:marcusfranco98@gmail.com"
+      url: "mailto:hello@marcusfran.co"
     },
     {
       name: "LinkedIn",
